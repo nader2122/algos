@@ -1,0 +1,29 @@
+ALGORITHM calcul
+VAR
+    c:CHAR;
+    i:INTEGER;
+    nb_word:INTEGER:=0;
+    nb_vow:INTEGER:=0;
+    nb_char:INTEGER:=0;
+BEGIN
+   WHILE (c != '.') DO
+     c ++
+   
+    write("length sentence",nb_char)
+ 
+   FOR c FROM 0 TO c.length  DO
+    c ++
+       IF (c =" ") THEN
+    write("number of word",nb_word);
+       END_IF
+       END_FOR
+
+       FOR c FROM 0 TO c.length   DO
+    c ++   
+     IF (c ='a' || c ='i' || c ='o' || c ='e' || c ='u' || c ='y' || c='A' || c ='I' || c ='O' || c ='E' || c='U' || c='Y') THEN
+     write("number of vowelle",nb_vow)
+     END_IF
+       END_FOR
+    
+     END_WHILE
+END
